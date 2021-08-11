@@ -2,7 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+notebooks/Models
+src/web_app/model_four_class_v2/
+notebooks/
 # C extensions
 *.so
 
@@ -127,3 +129,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+data/image_data/
+data/image_data_four_cat/
+data/image_data_less_genres/
+data/Image_data_minifigs/

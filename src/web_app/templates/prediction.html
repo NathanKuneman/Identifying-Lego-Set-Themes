@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lego Themer</title>
+<meta name="description" content="A Flask app for finding the theme of a Lego set">
+<meta name="author" content="Nathan Kuneman">
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("../static/images/background.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
+  <style>
+    .container {
+      height: 70px;
+      position: relative;
+      background-color: rgb(236, 236, 236);
+    }
+    .container-2 {
+      margin: auto;
+      height: 1000;
+      width: 50%;
+      position: relative;
+      background-color: rgb(236, 236, 236);
+      top: 30%;
+      -ms-transform: translateY(-30%);
+      transform: translateY(-30%)
+    }
+    
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .center {
+      margin: auto;
+      width: 50%;
+      border: 3px solid green;
+      padding: 10px;
+    }
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 80%;
+      max-height: 80%
+      padding: 10px;
+    }
+    </style>
+</head>
+<body>
+  
+  <div class="bg">
+    <div class="container">
+      <div class="vertical-center">
+        <p style="font-size:50px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(58, 57, 57);">Lego Themer</p>
+      </div>
+    </div>
+      <div class="container-2">
+        <p style="text-align: center; font-size:30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(58, 57, 57);">Category: {{category}} <br> Confidence: {{confidence}}%</p>
+        <img src={{filepath}} alt="Image Not Found" class=center-image>
+        <center><a href={{url_for('welcome_page')}} style="text-align: center; font-size:30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(58, 57, 57);">Upload a new image</a></center>
+    </div>
+  </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+</body>

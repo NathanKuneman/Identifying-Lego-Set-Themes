@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lego Themer</title>
+<meta name="description" content="A Flask app for finding the theme of a Lego set">
+<meta name="author" content="Nathan Kuneman">
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("../static/images/background.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
+  <style>
+    .container {
+      height: 70px;
+      position: relative;
+      background-color: rgb(236, 236, 236);
+    }
+    .container-2 {
+      margin: auto;
+      height: 1000;
+      width: 50%;
+      position: relative;
+      background-color: rgb(236, 236, 236);
+      top: 30%;
+      -ms-transform: translateY(-90%);
+      transform: translateY(-90%)
+    }
+    
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .center {
+      margin: auto;
+      width: 80%;
+      border: 1px solid rgb(39, 39, 39);
+      padding: 10px;
+    }
+    </style>
+</head>
+<body>
+  
+  <div class="bg">
+    <div class="container">
+      <div class="vertical-center">
+        <p style="font-size:50px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(58, 57, 57); float: right;">Lego Themer</p> 
+      </div>
+    </div>
+      <div class="container-2">
+        <p style="text-align: center; font-size:30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(58, 57, 57);">Upload your image to get the theme</p>
+        <div class="center">
+          <form method=post enctype=multipart/form-data>
+            <input type=file name=file style="font-size:20px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(58, 57, 57);">
+            <input type=submit value=Upload style="font-size:20px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(58, 57, 57);">
+        </form>
+        </div>
+        <p></p>
+    </div>
+  </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
